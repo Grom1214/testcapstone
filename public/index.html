@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Her House Of Wax</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!--title font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <!--nav header-->
+        <div class="nav-header">
+          <img src="https://thumbs.dreamstime.com/b/vector-sketch-illustration-female-hands-holding-candle-arm-art-background-black-candle-care-concept-counting-design-drawing-143426211.jpg" class="icon" alt="Logo" />
+          <br />
+          <h1 class="logo">Her House Of Wax</h1>
+          <button class="nav-toggle">
+            <i class="fa fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="buy.html">Candles</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <div class="title">
+        <h2>Welcome to her house of wax</h2>
+        <p class="text">
+          We are a eco-friendly candle making company whose sole purpose is to bring you the decorative candles to light up your home space.  Our selection varies depending on the month of purchase. We Do special orders on any of our present or past candles, and every candle that her House of Wax create is 100% homemade with our eco-friendly soybean wax.
+        </p>
+      </div>
+      <div class="about-center main-center">
+        <article class="about-img">
+          <img src="https://i.etsystatic.com/32453378/c/2250/1788/0/221/il/c5f481/3498351897/il_340x270.3498351897_nisb.jpg" alt="" />
+        </article>
+        <article class="about">
+          <!---btn container-->
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="about">About</button>
+            <button class="tab-btn" data-id="How to purchase">How to purchase</button>
+            <button class="tab-btn" data-id="contact">Contact</button>
+          </div>
+          <article class="about-content">
+            <!--single item-->
+            <div class="content active" id="about">
+              <h4>About</h4>
+              <p class="text">
+                
+                enter halies about company here
+              </p>
+            </div>
+            <!--end of single item-->
+            <!--single item-->
+            <div class="content" id="How to purchase">
+              <p class="text">
+                Please email us your order and we will send you a order summary confirmation and once payment is recived we will send you a receipt and a tracking label within 24hrs. If you have a speacial order please contact us to start creating your candle. please allow us to reach out to you to confirm shipping dates. <a href="./form.html">Learn More</a>
+              </p>
+            </div>
+            <!--end of single item-->
+            <!--single item-->
+            <div class="content" id="contact">
+              <p class="text">
+                Phone: 435-840-2142 <br />
+                Email: herhouseofwax@gmail.com
+                Address: 501 wax lane <br />
+                Somewhere, USA 12345 <br />
+                <br />
+                operationg hours are Monday through Friday 9-5am. we will respond within 24 hours to any email thank you!
+              </p>
+            </div>
+            <!--end of single item-->
+          </article>
+        </article>
+      </div>
+    </section>
+
+    <div class="comment-box">
+    <section>
+      <form>
+          <h2>Leave a review!</h2>
+          <label for="name-field">Name:</label>
+          <input type="text" id="name" />
+          <br>
+          <label for="comment">Comment:</label>
+          <textarea name="message" id="comment" cols="30" rows="5"></textarea>
+          <br>
+          <input class="btn" type="submit" value="Submit" />
+        </form>
+      </section>
+    </div>
+    <h2 class="comment-header">See Her house of Wax reviews:</h2>
+    <section id="comment-container"></section>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

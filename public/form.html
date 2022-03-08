@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Her House Of Wax</title>
+    <link rel="stylesheet" href="buy.css">
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!--title font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-center">
+          <!--nav header-->
+          <div class="nav-header">
+            <img src="https://thumbs.dreamstime.com/b/vector-sketch-illustration-female-hands-holding-candle-arm-art-background-black-candle-care-concept-counting-design-drawing-143426211.jpg" class="icon" alt="Logo art">
+            <br>
+            <h1 class="logo">Her House Of Wax</h1>
+            <button class="nav-toggle">
+              <i class="fa fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+        <ul class="links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="buy.html">Candles</a>
+          </li>
+        </ul>
+        </div>  
+        </nav>
+        <header>
+            <div class="title">
+                <h2>Welcome Her House Of Wax</h2>
+                <p class ="text"> enter the eco friendly shpeel here.</p>
+              </div>
+        </header>
+        <main id="list">
+        <h3 style="text-align: center;"> candle request list</h3>
+      <div class="container">
+      <input  name="text" id="text" placeholder="add candle" />
+      <input type="hidden" id="saveIndex" />
+      <button  id="add-task-btn">Add</button>
+      <button style="display: none" id="save-todo-btn">Edit Todo</button>
+      <div id="listBox"></div>
+      </div>
+    </main>
+    <script src="./form.js"> </script>
+</body>
+</html>
