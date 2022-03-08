@@ -3,12 +3,10 @@ globalId = 4;
 
 module.exports = {
   getAllComments: (req, res) => {
-      console.log(req)
     res.status(200).send(comments);
   },
   createComment: (req, res) => {
     let { name, comment } = req.body;
-    console.log(req.body)
     let newComment = {
       id: globalId,
       name: name,
