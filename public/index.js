@@ -1,6 +1,8 @@
 const navToggle = document.querySelector('.nav-toggle')
 const links = document.querySelector('.links')
 
+const baseUrl = "http://localhost:5464"
+
 navToggle.addEventListener('click', () => {
     if(links.classList.contains('show-links')){
         links.classList.remove('show-links')
@@ -17,8 +19,8 @@ const form = document.querySelector('form')
 const commentCallback = ({ data : comments }) => displayComments(comments)
 const errCallback = err => console.log(err)
 
-const getAllComments = () => axios.get('https://localhost:5464/api/comments').then(commentCallback).catch(errCallback)
-const createComment = body => axios.post('/api/comments', body).then(commentCallback).catch(errCallback)
+const getAllComments = () => axios.get(`${baseUrl}/api/comments`).then(commentCallback).catch(errCallback)
+const createComment = body => axios.post(`${baseUrl}/api/comments`, body).then(commentCallback).catch(errCallback)
 
 
 function submitHandler(e) {
@@ -42,9 +44,9 @@ function createCommentCard(comment) {
     commentCard.classList.add('comment-card')
 
     commentCard.innerHTML = `
-    <p class="comment">${comment.name} says: "${comment.comment}"</p>
-    <br>
+    <p><strong class="comment">${comment.name}</strong> says: "${comment.comment}"</p>
     <p> --------------------------------------</p>
+    <br>
     `
 
     commentContainer.appendChild (commentCard)
